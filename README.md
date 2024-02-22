@@ -1,2 +1,2 @@
-# TypeScript
-Refactor of an Ecommerce API from JavaScript to TypeScript
+# Pisco & Co - Ecommerce
+Refactor of an Ecommerce
