@@ -1,0 +1,59 @@
+.container{
+  font-family: "Montserrat", sans-serif;
+  padding: none;
+  margin: none;
+  background-color:#ffffff;
+  border-radius: 5px;
+  margin: 10px 50px 5px 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+  .image{
+    max-height: 100px;
+    max-width: 100px;
+    margin-right: 20px;
+  }
+
+
+  .title{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .reviewContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 20px 5px 50px;
+    padding: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+
+  .dataContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .productTitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+  
+  .localDate {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+  }

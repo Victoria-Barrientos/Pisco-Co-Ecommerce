@@ -1,0 +1,147 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    height: 200vh;
+    max-height: 400vh;
+    background-color: #0E5ABC;
+    z-index: 100;
+    transition: width 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .close {
+      width: max-content;
+      height: 100%;
+    }
+    
+    .open {
+      width: 50%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+  
+    .text {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .sidebar {
+      width: max-content;
+      height: 100%;
+    }
+    .close {
+        width: max-content;
+        height: 100%;
+      }
+  }
+  
+  @media (min-width: 1025px) {
+    .sidebar {
+      width: max-content;
+      transform: none;
+      height: 100%;
+    }
+    .close {
+        width: max-content;
+        height: 100%;
+      }
+  }
+  
+  /* Resto de los estilos del Sidebar */
+  
+  
+  /* Otros estilos del Sidebar */
+  
+  
+  .open {
+    transform: translateX(0);
+  }
+  
+  .btnToggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnToggle span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .open .btnToggle span:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .open .btnToggle span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open .btnToggle span:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .navi {
+    padding-top: 2rem;
+  }
+  
+  .desorList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .orderList {
+    padding: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+    font-size: 22px;
+  }
+  
+  .text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+.menuItem {
+  text-decoration: none;
+  color: white;
+  border-radius: 0.5rem;
+  width: max-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.menuItem:hover {
+  text-decoration: none;
+  background-color: #448EED;
+}

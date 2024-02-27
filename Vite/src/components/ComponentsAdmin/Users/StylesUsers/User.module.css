@@ -1,0 +1,205 @@
+/* .container {
+  width: 90%;
+  grid-column: span 1;
+  position: relative;
+  height: 70vh;
+  padding: 1rem;
+  border: 1px;
+  border-radius: 0.5rem;
+  background-color: #3759e4;
+  overflow: scroll;
+  margin: 0.5rem;
+} */
+
+.allUsers {
+  /* justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding-right: 30px;
+  margin: 20px 30px 20px 0px;
+  border: 3px; */
+  display: flex;
+  width: 90vw;
+  margin: 10px 20px;
+  background-color: #4BBF68;
+  border-radius: 5px;
+}
+
+
+.order {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  background-color: transparent;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.order:hover {
+  background-color: whitesmoke;
+}
+
+.faShop {
+  border-radius: 50%;
+  width: 80px;
+  margin-left: 5px;
+}
+
+.faShop img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border: 2px solid #4BBF68;;
+  border-radius: 50%;
+}
+
+.textContainer {
+  padding-left: 1rem;
+}
+
+.textContainer .name {
+  padding-left: 1rem;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.textContainer .email {
+  padding-left: 1rem;
+  font-size: 18px;
+}
+
+.textContainer .country {
+  padding-left: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4BBF68;;
+  padding: 5px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.adminIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4BBF68;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.icon {
+  font-size: x-large;
+}
+
+.text {
+  text-align: center;
+  width: 100%;
+  margin: 0.5rem;
+ font-size: 16px;
+  font-weight: bold;
+}
+
+.image {
+  display: none; /* Oculta la imagen */
+}
+
+
+/*--- estilos para el modal desplegado ----*/
+
+.userDetails {
+  text-align: center;
+  padding: 1rem;
+}
+
+.userDetailsHeader {
+  display: flex;
+  align-items: center;
+}
+
+.userDetailsHeaderCol {
+  flex: 1;
+}
+
+.userDetailsName {
+  margin-bottom: 1rem;
+}
+
+.userDetailsInfo {
+  text-align: start;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+.userDetailsValue {
+  margin-left: 0.5rem;
+  font-weight: 100;
+}
+
+.userDetailsValueId {
+  font-size: medium;
+  margin-left: 0.5rem;
+  font-weight: 10;
+}
+
+.userDetailsLabel {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
+@media (min-width: 576px) {
+  .userDetailsInfo {
+    margin-top: 0;
+  }
+
+  .userDetailsInfo > div {
+    border-left: 1px solid #ccc;
+  }
+
+  .userDetailsInfo > div:first-child {
+    border-left: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+}
