@@ -1,0 +1,366 @@
+.componentContainer {
+  font-family: "Montserrat", sans-serif;
+  margin: none;
+  padding: none;
+}
+
+button.backButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 15px;
+  margin-left: 30px;
+}
+
+button.backButton svg {
+  fill: #000000;
+  height: 2em;
+  margin-right: 0.5em;
+  width: 2em;
+}
+
+button.backButton:hover svg {
+  fill: rgb(165, 182, 199);
+  cursor: pointer;
+}
+
+.purchaseContainer {
+    font-family: "Montserrat", sans-serif;
+    margin: none;
+    padding: none;
+    min-height: 80vh;
+}
+
+.circularTabs {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+  
+.tab {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  border: 1px solid #0fa832;
+  color: #0fa832;
+  font-weight: bolder;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.activeTab {
+  color: white;
+  background-color: #0fa832;
+}
+  
+.tabSpan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabText {
+  display: inline-block;
+  color: #0fa832;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+.tabLine {
+  position: relative;
+  top: 25px;
+  background-color: #0fa832;
+  width: 15vw; 
+  height: 2px;
+}
+
+.panelContainer {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.doublePanelContainer {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.megaContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.bannerContainer {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.bannerContainer  img{
+  width: 100%;
+}
+
+.tabsContainer {
+  min-height: 50vh;
+  margin: 30px 50px 0px 50px;
+}
+
+.firstButtonsContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back_Button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.back_Button:hover {
+  background-color: #0056b3;
+}
+
+.backButton:disabled {
+  background-color:  #1a7ee9;
+  cursor: not-allowed;
+}
+
+.firstContinueButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:  #4BBF68;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.continueButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:  #4BBF68;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.continueButton:hover {
+  background-color:  #3ca957;
+}
+
+.continueButton:disabled {
+  background-color:  #7ED994;
+  cursor: not-allowed;
+}
+
+.container form input[type="text"],
+.container form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  font-size: 16px;
+  background-color: #ccc;
+}
+
+.label {
+  display: flex;
+  padding: 10px;
+  font-weight: bold;
+  justify-content: flex-start;
+  color:black
+}
+
+.containerDelivery {
+  width: 100%;
+  display:flex ;
+  flex-direction: row;
+}
+
+.containerDeliveryForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4BBF68;
+}
+
+/* Modal Cancelar compra */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modalContent h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.modalContent p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.modalButtons button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modalButtons button:first-child {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.modalButtons button:last-child {
+  background-color: #ccc;
+  color: #333;
+}
+
+/* tab Confirmar Compra */
+
+.resumeContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 0px 0px;
+  padding: 10px 20px 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.userDataContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 70%;
+  margin: 20px 0px 0px 0px;
+  padding: 10px 20px 10px 20px;
+}
+
+.userDataTag {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.userDataInfo {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+.productTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.productPrice {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #4BBF68;
+  margin-bottom: none;
+}
+
+/* .productOldPrice {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #4BBF68;
+  margin-bottom: none;
+} */
+
+.totalContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.resumePrice {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.submitDisabledButton {
+  border-radius: 5px;
+  font-size: 18px;
+  background-color:  #7ED994;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  cursor:not-allowed;
+  transition: background-color 0.3s ease;
+}
+
+.errors {
+  margin-top: 5px;
+  color: red;
+  font-size: 14px;
+  margin-bottom: 0;
+  height: 16px;
+  overflow: hidden;
+}
+

@@ -1,0 +1,16 @@
+.productContainer {
+    max-width: 150%;
+    padding: none;
+    margin: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ccc;
+    padding: 40px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
